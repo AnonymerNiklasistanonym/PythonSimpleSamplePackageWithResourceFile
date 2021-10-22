@@ -25,7 +25,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            #"your_package_name_init=your_package_name:main_init",
+            "your_package_name_init=your_package_name:main_init",
             "your_package_name=your_package_name:main",
         ],
     },

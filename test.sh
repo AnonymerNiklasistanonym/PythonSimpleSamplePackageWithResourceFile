@@ -26,5 +26,6 @@ python3 -m venv "$INSTALL_ENVIRONMENT"
 source "$INSTALL_ENVIRONMENT/bin/activate"
 python3 -m pip install --upgrade pip
 pip install "$DIST_DIRECTORY/$PACKAGE_NAME-$PACKAGE_VERSION-py3-none-any.whl"
+your_package_name_init
 your_package_name
 deactivate
