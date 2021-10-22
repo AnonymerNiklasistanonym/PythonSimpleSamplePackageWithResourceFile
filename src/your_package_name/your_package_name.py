@@ -13,7 +13,9 @@ def main():
     print(f"{markdown.__version__=}")
     print(f"{genanki.__version__=}")
 
-    with open("resource_file.txt", "r", encoding="utf-8") as f:
+    script_directory = os.path.dirname(os.path.realpath(__file__))
+    resource_file_path = os.path.join(script_directory, "resource_file.txt")
+    with open(resource_file_path, "r", encoding="utf-8") as f:
         resource_file_content = f.read()
         print(f"{resource_file_content=}")
 
